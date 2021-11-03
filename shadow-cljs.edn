@@ -1,0 +1,9 @@
+;; shadow-cljs configuration
+{:source-paths ["src"]
+
+ :builds {:browser {:target :browser
+                    :output-dir "resources/js"
+                    :asset-path "js"
+                    :modules {:app {:entries [geometer.app]}}
+                    :js-options {:output-feature-set :es8}
+                    }}}

@@ -1,0 +1,2 @@
+{:tasks {dev {:doc "Start app in dev mode, compiles cljs and css"
+              :task (clojure "-M:dev watch browser")}}}
