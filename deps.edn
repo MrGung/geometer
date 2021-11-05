@@ -5,7 +5,4 @@
  :aliases {:dev {:extra-deps {
                               thheller/shadow-cljs {:mvn/version "2.15.12"}}
                  :main-opts ["-m" "shadow.cljs.devtools.cli"]}
-           :repl {:extra-deps {weasel/weasel {:mvn/version "0.7.0"}
-                               nrepl/nrepl {:mvn/version "0.8.3"}
-                               cider/piggieback {:mvn/version "0.5.3"}}
-                  :main-opts ["-m" "shadow.cljs.devtools.cli"]}}}
+           :repl {:main-opts ["-m" "shadow.cljs.devtools.cli"]}}}
