@@ -1,2 +1,5 @@
 {:tasks {dev {:doc "Start app in dev mode, compiles cljs and css"
-              :task (clojure "-M:dev watch browser")}}}
+              :task (do
+                      (clojure "-M:repl:dev watch browser"))}
+         repl {:doc "Start cljs-REPL-server"
+               :task (shell "npx shadow-cljs cljs-repl browser")}}}

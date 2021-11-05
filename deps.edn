@@ -2,8 +2,10 @@
  :deps {org.clojure/clojurescript {:mvn/version "1.10.866"}
         thi.ng/geom {:mvn/version "1.0.0-RC4"}               ;; latest: "1.0.0-RC4"
         thi.ng/domus {:mvn/version "0.3.0-SNAPSHOT"}}
- :aliases {:dev {:extra-deps {com.cemerick/piggieback {:mvn/version "0.2.1"}
-                              org.clojure/tools.nrepl {:mvn/version "0.2.12"}
-                              weasel/weasel {:mvn/version "0.7.0"}
+ :aliases {:dev {:extra-deps {
                               thheller/shadow-cljs {:mvn/version "2.15.12"}}
-                 :main-opts ["-m" "shadow.cljs.devtools.cli"]}}}
+                 :main-opts ["-m" "shadow.cljs.devtools.cli"]}
+           :repl {:extra-deps {weasel/weasel {:mvn/version "0.7.0"}
+                               nrepl/nrepl {:mvn/version "0.8.3"}
+                               cider/piggieback {:mvn/version "0.5.3"}}
+                  :main-opts ["-m" "shadow.cljs.devtools.cli"]}}}
