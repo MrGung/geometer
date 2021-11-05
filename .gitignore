@@ -1,3 +1,9 @@
 /out
 /target
 /.nrepl-port
+/.idea/
+/.shadow-cljs
+/.cpcache/
+/resources/js/cljs-runtime/
+/resources/js/app.js
+/resources/js/manifest.edn
